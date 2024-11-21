@@ -116,6 +116,7 @@ nav #navbuttons{
 
 #AboutUsleft{
     width: 40%; 
+    height: 90vh;
 }
 
 #AboutUsleft h1{
@@ -135,9 +136,9 @@ nav #navbuttons{
 #AbousUsright{
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center;
     width: 40%;
+    height: 90vh;
+    text-align: center;
 }
 
 #Aboutuspng{
@@ -231,7 +232,7 @@ img.displaySlide{
 footer{
     display: flex;
     background-color: #273a3d;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .footerList{
@@ -246,10 +247,23 @@ footer{
     overflow: hidden;
     line-height: 1.5;
 }
+.footerList li:hover{
+    cursor: pointer;
+}
 .footercontact{
-    border: solid;
     padding: 0;
+    text-align: right;
+    height: 20vh;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
 }
 .footercontact h1{
     margin: 0;
+    color: white;
+    overflow: hidden;
+}
+.footercontact p{
+    margin: 0;
+    color: white;
+    overflow: hidden;
 }
