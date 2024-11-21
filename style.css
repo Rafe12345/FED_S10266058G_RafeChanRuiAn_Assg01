@@ -31,7 +31,6 @@ header{
     font-size: 1.2em;
     box-shadow: inset 0 0 0 0 #f9b233;
     transition: ease-out 0.3s;
-    
 }
 #homepage a:hover{
     box-shadow: inset 150px 0 0 0 #f9b233;
@@ -44,8 +43,8 @@ header{
     position: absolute;
     top: 20%;
     right: 0;
-    margin-right: 100px;
-    padding-bottom: 15px;
+    margin-right: 5%;
+    padding-bottom: 5%;
     overflow: hidden;
 }
 nav{
@@ -63,12 +62,12 @@ nav{
     backdrop-filter: blur(10px);
 }
 nav #TECHYARD_LOGO{
-    width: 100px;
+    width: 10%;
     
 }
 .icons{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: white;
     border-radius: 50%;
     display: flex;
@@ -82,6 +81,7 @@ nav #navbuttons{
 #navmenu{
     display: flex;
     gap: 15px;
+    width: 55%;
 }
 #navmenu a{
     padding: 0px;
@@ -91,12 +91,15 @@ nav #navbuttons{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    width: 150px;
+    width: 33%;
     height: 40px;
     color: white;
     font-family: "Koulen", sans-serif;
     box-shadow: inset 0 0 0 0 #f9b233;
     transition: ease-out 0.3s;
+}
+.hamburger{
+    display: none;
 }
 #navmenu a:hover{
     box-shadow: inset 150px 0 0 0 #f9b233;
@@ -109,14 +112,16 @@ nav #navbuttons{
     align-items: center;
     justify-content: center;
     gap: 5%;
-    width: 100%;
-    padding: 50px; 
+    width: 100vw;
+    height: 70vh;
+    padding: 20px 50px; 
     box-sizing: border-box; 
 }
 
 #AboutUsleft{
     width: 40%; 
-    height: 90vh;
+    height: 90%;
+    overflow: hidden;
 }
 
 #AboutUsleft h1{
@@ -137,12 +142,12 @@ nav #navbuttons{
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 90vh;
+    height: 90%;
     text-align: center;
 }
 
 #Aboutuspng{
-    height: 40vh;
+    height: 60%;
     width: 100%; 
     background-image: url(resources/AboutUs.png);
     background-size: cover;
@@ -153,14 +158,18 @@ nav #navbuttons{
 }
 
 #partners img {
-    width: 150px; 
+    width: 15%; 
     margin: 10px; 
+}
+#partners{
+    overflow: hidden;
 }
 #partners h1{
     font-family: "Koulen", sans-serif;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     overflow: hidden;
+    text-align: center;
 }
 #Product_Catalouge{
     display: flex;
@@ -233,40 +242,40 @@ footer{
     display: flex;
     background-color: #273a3d;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
+    overflow: hidden;
 }
-.footerList{
+.footerLinks{
     display: flex;
-    height: 30vh;
-    gap: 85px;
+    flex-direction: column;
+    /* height: 30vh; */
+    gap: 20px;
     margin-top: 30px;
-}
-.footerList li{
-    color: white;
-    font-family: "Poppins", sans-serif;
     overflow: hidden;
-    line-height: 2;
 }
-.footerList li:hover{
-    cursor: pointer;
-}
-.footerList ul{
+.footerLinks div{
+    margin-bottom: 20px;
     overflow: hidden;
-    list-style: none;
 }
-.footerList h1{
-    font-family: "Koulen", sans-serif;
-    overflow: hidden;
-    color: white;
+.footerLinks div h1{
     margin: 0;
-    margin-bottom: 10px;
+    color: white;
+    overflow: hidden;
+    font-family: "Koulen", sans-serif;
+    margin-bottom: 15px;
+}
+.footerLinks div a{
+    color: white;
+    padding-right: 20px;
+    font-family: "Poppins", sans-serif;
 }
 .footercontact{
     padding: 0;
     text-align: right;
-    height: 30vh;
+    /* height: 30vh; */
     margin-top: 30px;
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
 }
 .footercontact h1{
     margin: 0;
@@ -279,10 +288,12 @@ footer{
     overflow: hidden;
 }
 #footericon{
-    margin-top: 10px;
     display: flex;
+    margin: 0;
+    padding: 0;
     gap: 15px;
-    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;;
 }
 #footerLogo{
     max-width: 100px;
@@ -290,4 +301,83 @@ footer{
 .footerLogo{
     height: 100px;
     margin-top: 15px;
+}
+@media screen and (max-width: 900px) {
+    #homepage h1{
+        font-size: 3em;
+    }
+    nav{
+        width: 60%;
+    }
+    nav #TECHYARD_LOGO{
+        width: 30%;
+    }
+    .icons{
+        display: none;
+    }
+    .hamburger{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav #navbuttons{
+        display: flex;
+        gap: 5px;
+    }
+    #navmenu{
+        display: none;
+    }
+    #AboutUs {
+        height: 80vh;
+        padding: 10% 5%; 
+    }
+    #AboutUsleft h1{
+        font-size: 2.5em;
+    }
+    
+    #AboutUsleft p{
+        font-size: 0.65em;
+    }
+    #partners img {
+        width: 35%; 
+    }
+
+    #partners h1{
+        font-size: 1em;
+    }
+    #Product_Catalouge{
+        justify-content: start;
+        height: 60vh;
+
+    }
+    #Product_Catalouge h1{
+        font-size: 2em;
+
+    }
+    .slider{
+        margin: 0;
+    }
+
+    .slider button{
+        font-size: 1rem;
+    }
+
+    #Product_Catalouge a{
+        width: 40%;
+        height: 7%;
+        box-shadow: none;
+        transition: none;
+        margin-top: 10%;
+        font-size: 1em;
+    }
+    #Product_Catalouge a:hover{
+        box-shadow: none;
+        cursor: pointer;
+        color: white;
+    }
+    footer{
+        display: none;
+    }
 }
