@@ -113,7 +113,7 @@ nav #navbuttons{
     justify-content: center;
     gap: 5%;
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     padding: 20px 50px; 
     box-sizing: border-box; 
 }
@@ -134,8 +134,8 @@ nav #navbuttons{
 
 #AboutUsleft p{
     font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    line-height: 1.8; 
+    font-size: 1.2vw;
+    line-height: 1.5; 
 }
 
 #AbousUsright{
@@ -232,6 +232,7 @@ img.displaySlide{
     transition: ease-out 0.3s;
     margin-top: 75px;
     font-size: 2em;
+    overflow: hidden;
 }
 #Product_Catalouge a:hover{
     box-shadow: inset 350px 0 0 0 #f9b233;
@@ -307,10 +308,10 @@ footer{
         font-size: 3em;
     }
     nav{
-        width: 60%;
+        width: 50%;
     }
     nav #TECHYARD_LOGO{
-        width: 30%;
+        width: 20%;
     }
     .icons{
         display: none;
@@ -321,10 +322,6 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    nav #navbuttons{
-        display: flex;
-        gap: 5px;
     }
     #navmenu{
         display: none;
@@ -378,6 +375,35 @@ footer{
         color: white;
     }
     footer{
-        display: none;
+        padding: 0px 5%;
     }
+    .footerLinks{
+        font-size: small;
+    }
+    .footerLinks a{
+        font-size: small;
+    }
+    .footerLinks div{
+        margin-bottom: 5%;
+    }
+    .footercontact h1{
+        margin: 0;
+        color: white;
+        overflow: hidden;
+        font-size: 3.5vw;
+    }
+    .footercontact p{
+        font-size: 2vw;
+    }
+
+    #footericon .icons{
+        display: flex;
+        width: 7vw;
+        height: 7vw;
+        margin-top: 3%;
+    }
+    #footerLogo{
+        max-width: 50%;
+    }
+
 }
