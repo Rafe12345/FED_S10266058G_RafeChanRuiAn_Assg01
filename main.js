@@ -1,6 +1,7 @@
 const slides = document.querySelectorAll(".slides img")
 let slideIndex = 0;
 let intervalID = null;
+let on = false;
 document.addEventListener("DOMContentLoaded",initalizeSlider);
 // initalizeSlider();
 function initalizeSlider(){
@@ -31,3 +32,15 @@ function nextSlide(){
     slideIndex++
     showSlide(slideIndex);
 }
+function dropDownMenu() {
+    if(!on){
+        const div = document.querySelector('.hamburgerMenu');
+        div.classList.add('active');
+        on = true;
+    }
+    else{
+        const div = document.querySelector('.hamburgerMenu');
+        div.classList.remove('active');
+        on = false;
+    }
+  }
