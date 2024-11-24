@@ -51,3 +51,93 @@ function dropDownMenu() {
         on = false;
     }
   }
+// const checkboxes = document.querySelectorAll(".option input[type='checkbox']");
+// let check = [];
+// checkboxes.forEach(element => {
+//     element.addEventListener("change", () => {
+//         if(element.checked){
+//             if(element.value == "Monitors"){
+//                 document.querySelector(".Monitors").style.display = "";
+//                 check[element.value] = element.value;
+//             }
+//             else if(element.value == "Processors"){
+//                 console.log(element.value);
+//                 document.querySelector(".Processors").style.display = "none";
+//             }
+//             else if(element.value == "GPU"){
+//                 console.log(element.value);
+//                 document.querySelector(".GPU").style.display = "none";
+//         }}
+//         else if(element.unchecked && element.value in check){
+//             check.splice(element)
+//         }
+//         else if(check.length > 0){
+//             const products = document.querySelectorAll(".products > div")
+//             products.forEach(element => {
+//                 element.style.display = "none";
+//             });
+//         }
+//         else{
+//             const products = document.querySelectorAll(".products > div")
+//             products.forEach(element => {
+//                 element.style.cssText = '';
+//             });
+//         }
+//     });
+// });
+const checkboxes = document.querySelectorAll(".option input[type='checkbox']");
+let check = [];
+
+checkboxes.forEach(element => {
+    element.addEventListener("change", () => {
+        if(element.checked){
+            // Hide all sections first
+            const allSections = document.querySelectorAll(".Monitors, .Processors, .GPU");
+            allSections.forEach(section => section.style.display = "none");
+
+            // Show the section related to the checked checkbox
+            if(element.value == "Monitors"){
+                check.push(document.querySelector(".Monitors"));
+                check.forEach(element =>{
+                    console.log(element)
+                    element.style.display = "";
+                })
+                // document.querySelector(".Monitors").style.display = "";
+            }
+            else if(element.value == "Processors"){
+                check.push(document.querySelector(".Processors"));
+                check.forEach(element =>{
+                    console.log(element)
+                    element.style.display = "";
+                })
+            }
+            else if(element.value == "GPU"){
+                check.push(document.querySelector(".GPU"));
+                check.forEach(element =>{
+                    console.log(element)
+                    element.style.display = "";
+                })
+            }
+        } else {
+            // When unchecked, hide that section
+            if(element.value == "Monitors") {
+                document.querySelector(".Monitors").style.display = "none";
+                check = check.filter(item => item!= document.querySelector(".Monitors"));
+            } else if(element.value == "Processors") {
+                document.querySelector(".Processors").style.display = "none";
+                check = check.filter(item => item!= document.querySelector(".Processors"));
+            } else if(element.value == "GPU") {
+                document.querySelector(".GPU").style.display = "none";
+                check = check.filter(item => item!= document.querySelector(".GPU"));
+            }
+        }
+
+        // If no options are checked, reset all products display
+        if (Object.keys(check).length === 0) {
+            const products = document.querySelectorAll(".products > div");
+            products.forEach(element => {
+                element.style.cssText = '';
+            });
+        }
+    });
+});
