@@ -1,10 +1,14 @@
 const slides = document.querySelectorAll(".slides img")
 let slideIndex = 0;
 let intervalID = null;
-const scrollContainer = document.querySelector('.cards');
-scrollContainer.addEventListener('wheel', (event) => {
-    event.preventDefault(); // Prevent default vertical scrolling
-    scrollContainer.scrollLeft += event.deltaY * 0.4; // Scroll horizontally
+let on = false;
+const scrollContainer = document.querySelectorAll('.cards');
+console.log(scrollContainer)
+scrollContainer.forEach(element => {
+    element.addEventListener('wheel', (event) => {
+        event.preventDefault();
+        element.scrollLeft += event.deltaY * 0.4;
+    });
 });
 document.addEventListener("DOMContentLoaded",initalizeSlider);
 function initalizeSlider(){
@@ -35,3 +39,15 @@ function nextSlide(){
     slideIndex++
     showSlide(slideIndex);
 }
+function dropDownMenu() {
+    if(!on){
+        const div = document.querySelector('.hamburgerMenu');
+        div.classList.add('active');
+        on = true;
+    }
+    else{
+        const div = document.querySelector('.hamburgerMenu');
+        div.classList.remove('active');
+        on = false;
+    }
+  }

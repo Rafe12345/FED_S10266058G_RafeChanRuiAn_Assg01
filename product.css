@@ -104,13 +104,14 @@ img.displaySlide{
     right: 0;
 }
 .products{
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
     margin-top: 15vh;
     margin-bottom: 15vh;
+    gap: 10vh;
 }
 .category{
     width: 100%;
@@ -122,46 +123,58 @@ img.displaySlide{
 }
 .category h1{
     margin: 0;
-    font-size: 300%;
+    font-size: 2.5vw;
 }
 .cards{
     display: flex;
     width: 100%;
-    gap: 10px;
+    gap: 1vw;
     overflow: auto;
+    padding-left: 0.5%;
 }
 .card{
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
-    width: 25%;
-    border: solid;
-    padding: 10px;
-    margin-top: 5%;
+    width: 18%;
+    /* border: thin solid; */
+    /* padding: 10px; */
+    margin-top: 4%;
     margin-bottom: 15px;
     border-radius: 10px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: #f1f1f1;
 }
 .card:hover{
     transform: translateY(-20px);
-    background-color: #f0f0f0;
 }
 .productImg img{
     width: 100%;
 }
 .productDetail{
     font-family: "Poppins", sans-serif;
-    font-size: 1vw;
+    font-size: 0.7vw;
+    background-color: #273a3d;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 1% 3%;
+    color: white;
 }
 .priceTag{
-    background-color: #273a3d;
     width: fit-content;
     padding: 1% 3%;
-    font-family: "Koulen", sans-serif;
+    background-color: aliceblue;
+    font-family: 'Roboto', sans-serif;
     border-radius: 10px;
-    color: white;
-    font-size: 120%;
+    color: #ed3541;
+    font-weight: bold;
+    font-size: 140%;
+    margin: 0;
 }
+.priceTag h3{
+    margin: 0;
+}
+
 .view{
     width: 90%;
     display: flex;
@@ -295,7 +308,20 @@ footer{
             top: 9vw;
         }
       }
-    
+    .card{
+        width: 30%;
+    }
+    .category h1{
+        margin: 0;
+        font-size: 150%;
+    }
+
+    .productDetail{
+        font-size: 40%;
+    }
+    .priceTag{
+        font-size: 150%;
+    }
     #navmenu{
         display: none;
     }
