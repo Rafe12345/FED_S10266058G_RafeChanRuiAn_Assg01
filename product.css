@@ -189,6 +189,9 @@ img.displaySlide{
     justify-content: flex-end;
     font-size: 250%;
 }
+.view:hover{
+    cursor: pointer;
+}
 .cards::-webkit-scrollbar {
     width: 80px;
     height: 5px;
