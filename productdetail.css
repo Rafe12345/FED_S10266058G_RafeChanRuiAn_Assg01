@@ -1,9 +1,11 @@
 .section1{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .productTop{
     width: 100%;
@@ -58,8 +60,141 @@
     background-color: #55c2da;
     border: none;
     font-family: "Koulen", sans-serif;
+    font-size: 1.1vw;
 }
 .shopBTN button:hover{
     background-color: rgb(85, 194, 218,0.8);
     transform: scale(110%);
+}
+.section2{
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.bentoGrid{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rect{
+    width: 90%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: min-content;
+    grid-column-gap: 3%;
+    grid-row-gap: 6%;
+}
+.rect div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid; */
+    padding: 20% 5%;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 1px 20px 30px -10px;
+}
+.rect div:hover{
+    transform: scale(110%);
+}
+
+.grid1{
+    grid-column: 1/3;
+    background-image: url("resources/bento/OLED.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid2{
+    background-image: url("resources/bento/care.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.grid3{
+    background-image: url("resources/bento/aorus.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid4{
+    background-image: url("resources/bento/360hz.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid5{
+    background-image: url("resources/bento/image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid6{
+    background-image: url("resources/bento/800R.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 3/5;
+}
+.sectionName{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.sectionName div{
+    font-family: "Koulen", sans-serif;
+    width: 80%;
+    font-size: 1.2vw;
+}
+.sectionName h1{
+    margin: 0;
+}
+.sectionName hr{
+    height: 1.4px;
+    background-color: black;
+}
+.section3{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.section3 iframe{
+    aspect-ratio: 16 / 9;
+}
+@media screen and (max-width: 900px) {
+    .productTop{
+        flex-direction: column;
+        align-items: center;
+    } 
+    .productLeft{
+        width: 80%;
+    }
+    .productLeft img{
+        width: 90%;
+    }
+    .productRight{
+        width: 80%;
+    }
+    .productRight h1{
+        font-size: 4vw;
+    }
+    .productRight h2{
+        font-size: 3vw;
+    }
+    .productRight p{
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        font-size: 1.5vw;
+    }
+    .shopBTN button{
+        font-size: 1.6vw;
+    }
 }
