@@ -5,9 +5,13 @@ let on = false;
 const scrollContainer = document.querySelectorAll('.cards');
 console.log(scrollContainer)
 scrollContainer.forEach(element => {
-    element.addEventListener('wheel', (event) => {
-        event.preventDefault();
-        element.scrollLeft += event.deltaY * 0.4;
+    element.addEventListener('scroll', (event) => {
+        if (event.deltaX !== 0) {
+            event.preventDefault();
+            scrollContainer.scrollLeft += event.deltaX;
+          }
+        // event.preventDefault();
+        // element.scrollLeft += event.deltaY * 0.4;
     });
 });
 document.addEventListener("DOMContentLoaded",initalizeSlider);
