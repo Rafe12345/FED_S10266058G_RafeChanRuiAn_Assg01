@@ -2,16 +2,60 @@ const slides = document.querySelectorAll(".slides img")
 let slideIndex = 0;
 let intervalID = null;
 let on = false;
-const scrollContainer = document.querySelectorAll('.cards');
-console.log(scrollContainer)
-scrollContainer.forEach(element => {
-    element.addEventListener('scroll', (event) => {
+// const scrollContainer = document.querySelectorAll('.cards');
+// scrollContainer.forEach(element => {
+//     element.addEventListener('scroll', (event) => {
+//         if (event.deltaX !== 0) {
+//             event.preventDefault();
+//             scrollContainer.scrollLeft += event.deltaX;
+//           }
+//     });
+    
+// });
+const scrollContainers = document.querySelectorAll('.cards');
+scrollContainers.forEach((scrollContainer) => {
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+    scrollContainer.querySelectorAll('img').forEach((img) => {
+        img.addEventListener('mousedown', event => event.preventDefault());
+    });
+
+    scrollContainer.addEventListener('mousedown', (event) => {
+        event.preventDefault();
+        isDragging = true;
+        startX = event.pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
+    });
+
+    scrollContainer.addEventListener('mousemove', (event) => {
+        if (!isDragging){
+            return;
+        }
+        else{
+            event.preventDefault();
+            const x = event.pageX - scrollContainer.offsetLeft;
+            const moved = (x - startX) * 0.8;
+            scrollContainer.scrollLeft = scrollLeft - moved;
+        }
+    });
+
+    scrollContainer.addEventListener('mouseup', () => {
+        isDragging = false;
+    });
+
+    scrollContainer.addEventListener('mouseleave', () => {
+        isDragging = false;
+    });
+    scrollContainer.addEventListener('wheel', (event) => {
         if (event.deltaX !== 0) {
             event.preventDefault();
             scrollContainer.scrollLeft += event.deltaX;
-          }
+        }   
     });
 });
+
+
 document.addEventListener("DOMContentLoaded",initalizeSlider);
 function initalizeSlider(){
     if(slides.length >0){
