@@ -10,8 +10,6 @@ scrollContainer.forEach(element => {
             event.preventDefault();
             scrollContainer.scrollLeft += event.deltaX;
           }
-        // event.preventDefault();
-        // element.scrollLeft += event.deltaY * 0.4;
     });
 });
 document.addEventListener("DOMContentLoaded",initalizeSlider);
