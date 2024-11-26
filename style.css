@@ -4,7 +4,8 @@ body{
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    background-color: #efefef;
+    /* background-color: #efefef; */
+    background-color: #f0f0f0;
 }
 header{
     height: 100vh;
@@ -164,6 +165,7 @@ nav{
     background-repeat: no-repeat;
     border-radius: 20px;
     margin-bottom: 20px;
+    box-shadow: rgb(38, 57, 77) 1px 20px 30px -10px;
 }
 
 #partners {
