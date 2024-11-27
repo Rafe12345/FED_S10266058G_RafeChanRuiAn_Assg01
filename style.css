@@ -4,8 +4,8 @@ body{
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    /* background-color: #efefef; */
-    background-color: #f0f0f0;
+    background-color: #faf7f0;
+    /* background-color: #f0f0f0; */
 }
 header{
     height: 100vh;
@@ -259,8 +259,9 @@ img.displaySlide{
 #Reviews h1{
     text-align: center;
     font-family: "Koulen", sans-serif;
-    font-size: 4em;
+    font-size: 5rem;
     overflow: hidden;
+    font-weight: 300;
 }
 .reviewCard{
     flex-basis: 20%;
@@ -290,6 +291,7 @@ img.displaySlide{
 .topCard{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 .topCard h3{
     font-family: "Poppins", sans-serif;
@@ -304,7 +306,7 @@ img.displaySlide{
 #cards{
     display: flex;
     padding: 20px 30px;
-    gap: 30px;
+    gap: 2.5rem;
     justify-content: center;
 }
 

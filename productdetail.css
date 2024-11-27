@@ -1,3 +1,4 @@
+
 .section1{
     width: 100vw;
     /* height: 100vh; */
@@ -11,9 +12,14 @@
     width: 90%;
     display: flex;
     flex-direction: row;
-    /* border: solid; */
+    border-radius: 25px;
     justify-content: center;
     gap: 2%;
+    background: linear-gradient(135deg, rgba(101, 98, 98, 0.1), rgba(39, 39, 39, 0));
+    backdrop-filter: blur(100px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background-color: #f4f0eb;
 }   
 .productLeft{
     width: 40%;
@@ -21,18 +27,23 @@
 }
 .productLeft img{
     width: 90%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .productRight{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     width: 40%;
+}
+.productRight hr{
+    height: 1.4px;
+    background-color: black;
+    display: block;
 }
 .productRight h1{
     font-family: "Koulen", sans-serif;
     font-size: 3vw;
     font-weight: 300;
+    margin: 0;
 }
 .productRight h2{
     font-family: "Poppins", sans-serif;
@@ -73,13 +84,13 @@
     justify-content: center;
     margin-bottom: 10%;
 }
+
 .bentoGrid{
     display: flex;
     width: 90%;
     height: 90%;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .rect{
@@ -88,8 +99,8 @@
     margin: 0 auto;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: min-content;
-    grid-column-gap: 3%;
-    grid-row-gap: 6%;
+    grid-column-gap: 2%;
+    grid-row-gap: 3%;
 }
 .rect div{
     display: flex;
@@ -152,10 +163,17 @@
 .sectionName div{
     font-family: "Koulen", sans-serif;
     width: 80%;
-    font-size: 1.2vw;
+}
+.sectionName p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+}
+#section3name{
+    text-align: end;
 }
 .sectionName h1{
     margin: 0;
+    font-size: 6rem;
     font-weight: 300;
 }
 .sectionName hr{
@@ -175,6 +193,7 @@
     .productTop{
         flex-direction: column;
         align-items: center;
+        padding-bottom: 1rem;
     } 
     .productLeft{
         width: 80%;
@@ -233,6 +252,12 @@
         grid-column: 1/3;
     }
     .sectionName div{
+        font-size: 0.8rem;
+    }
+    .sectionName h1{
+        font-size: 2.5rem;
+    }
+    .sectionName P{
         font-size: 0.8rem;
     }
 }

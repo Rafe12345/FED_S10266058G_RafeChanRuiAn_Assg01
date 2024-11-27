@@ -4,7 +4,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    background-color: #f0f0f0;  
+    background-color: #faf7f0;
 }
 nav{
     display: flex;
@@ -152,8 +152,10 @@ img.displaySlide{
     margin-top: 4%;
     margin-bottom: 15px;
     border-radius: 10px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    background-color: #fafafa;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    /* background-color: #fafafa; */
+    background-color: #f4f0eb;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: transform 0.3s ease;
 }
 .card:hover{
@@ -237,7 +239,7 @@ footer{
     overflow: hidden;
 }
 .footerLinks div{
-    margin-bottom: 20px;
+    margin-bottom: 0.7rem;
     overflow: hidden;
 }
 .footerLinks div h1{
