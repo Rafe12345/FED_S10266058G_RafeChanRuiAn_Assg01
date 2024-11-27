@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <nav>
+        <div class="mainNav">
+            <img id = "TECHYARD_LOGO" src="resources/TECHYARD_LOGO_FA_80x2x.png">
+            <div id="navmenu">
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a>Bundle deals</a>
+            </div>
+            <div id="navbuttons">
+                <div class="icons">
+                    <img src="resources/search_Icon.png"  alt="Icon" width="20" height="20">
+                </div>
+                <div  class="icons">
+                    <img src="resources/cart_Icon.png" alt="Icon" width="20" height="20">
+                </div>
+                <div  class="hamburger">
+                    <button onclick="dropDownMenu()"><img src="resources/icons/hamburger.png" alt="Icon" width="20" height="20"></button>
+                </div>
+            </div>
+        </div>
+        <div class="hamburgerMenu">
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a>Bundle deals</a>
+        </div>
+    </nav>
+    <section class="checkout">
+        <h1 class="Name">Checkout</h1>
+        <div class="checkoutBox">
+            <div class="orderSummary">
+                <div class="number">1</div>
+                <h1>Order Summary</h1>
+            </div>
+            <div class="orders">
+                <div class="order">
+                    <div class="orderLeft">
+                        <h1 class="productName">Gigabyte Aorus FO27Q3 | 27" 360HZ OLED Gaming Monitor</h1>
+                        <div class="counter">
+                            <input type="number" class="count" value="1" min="0" />
+                        </div>
+                        <h2 class="price">SGD 969</h2>
+                    </div>
+                    <div class="orderRight">
+                        <img src="resources/monitors/product1.png">
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="orderLeft">
+                        <h1 class="productName">Gigabyte Aorus FO27Q3 | 27" 360HZ OLED Gaming Monitor</h1>
+                        <div class="counter">
+                            <input type="number" class="count" value="1" min="0" />
+                        </div>
+                        <h2 class="price">SGD 969</h2>
+                    </div>
+                    <div class="orderRight">
+                        <img src="resources/monitors/product1.png">
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="orderLeft">
+                        <h1 class="productName">Gigabyte Aorus FO27Q3 | 27" 360HZ OLED Gaming Monitor</h1>
+                        <div class="counter">
+                            <input type="number" class="count" value="1" min="0" />
+                        </div>
+                        <h2 class="price">SGD 969</h2>
+                    </div>
+                    <div class="orderRight">
+                        <img src="resources/monitors/product1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="details">
+        <div class="table">
+            <div class="row">
+                <h1>Sub total:</h1>
+                <h1>$946</h1>
+            </div>
+            <div class="row">
+                <h1>Shipping fee:</h1>
+                <h1>$10</h1>
+            </div>
+            
+            <hr>
+            <div class="row">
+                <h1>Total:</h1>
+                <h1>$956</h1>
+            </div>
+            <div class="payment">
+                <button>Return</button>
+                <button>Procced</button>
+            </div>
+        </div>
+    </section>
+    <script src="checkout.js"></script>
+</body>
+</html>
