@@ -8,5 +8,11 @@ function addToCard(id, name, price, img, quantity){
 function add(id, name, price, img, quantity){
     let order = new addToCard(id, name, price, img, quantity)
     localStorage.setItem(order.id,JSON.stringify(order))
+    const btn = document.getElementById("addtocart")
+    btn.innerText = 'Added!';
+    btn.style.background = "green"
+    setTimeout(()=>{
+        btn.innerText = 'Add to Cart';
+        btn.style.background = '#55c2da'
+    },1000)
 }
-add(2,"ASUS ROG Swift PG27AQN | QHD 360HZ 27 IPS Gaming Monitor",999,"resources/monitors/product2.png",1)
