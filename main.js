@@ -43,4 +43,26 @@ function dropDownMenu() {
         div.classList.remove('active');
         on = false;
     }
-  }
+}
+const popup = document.getElementById("popup");
+const closeButton = document.getElementById("close-btn");
+const revealButton = document.getElementById("reveal-button");
+let triggered = false
+document.body.addEventListener("wheel", ()=>{
+    let y = document.body.getBoundingClientRect().top;
+    console.log(y <= -1300)
+    if(y < -1300 && !triggered){
+        event.preventDefault();
+        popup.style.opacity = 1;
+        popup.style.visibility  = "visible";
+        triggered = true;
+    }
+})
+closeButton.addEventListener("click", () => {
+    popup.style.opacity = 0;
+    popup.style.visibility  = "hidden";
+});
+revealButton.addEventListener("click", () => {
+    revealButton.style.color = "white"
+});
+
