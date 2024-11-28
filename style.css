@@ -94,7 +94,7 @@ nav{
 }
 #navmenu a{
     padding: 0px;
-    background-color: white;
+    background-color: #e2dbd3;;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -155,6 +155,7 @@ nav{
     margin: 0;
     margin-bottom: 20px;
     overflow: hidden;
+    font-weight: 300;
 }
 
 #AboutUsleft p {
@@ -208,8 +209,9 @@ nav{
 #Product_Catalouge h1{
     font-family: "Koulen", sans-serif;
     text-align: center;
-    font-size: 4em;
+    font-size: 5rem;
     overflow: hidden;
+    font-weight: 300;
 }
 .slider{
     position: relative;
@@ -261,7 +263,7 @@ img.displaySlide{
     padding: 1% 3%;
 }
 #Product_Catalouge a:hover{
-    box-shadow: inset 350px 0 0 0 #f9b233;
+    box-shadow: inset 500px 0 0 0 #f9b233;
     cursor: pointer;
     color: black;
 }
@@ -468,11 +470,7 @@ footer{
         justify-content: space-between;
         align-items: center;
         z-index: 2;
-        /* left: 50%; */
-        /* transform: translate(-50%, -50%); */
         backdrop-filter: blur(10px);
-        /* border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15PX; */
         border-radius: 15px;
         padding: 10px;
         animation: slideDown ease-out 0.5s;
@@ -549,6 +547,9 @@ footer{
         font-family: "Poppins", sans-serif;
         overflow: hidden;
         font-size: 1em;
+    }
+    #Reviews h1{
+        font-size: 2rem;
     }
     footer{
         padding: 0px 5%;

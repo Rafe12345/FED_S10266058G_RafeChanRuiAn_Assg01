@@ -51,7 +51,7 @@ nav{
 }
 #navmenu a{
     padding: 0px;
-    background-color: white;
+    background-color: #e2dbd3;
     text-decoration: none;
     display: flex;
     color: #333;
@@ -131,6 +131,7 @@ img.displaySlide{
 .category h1{
     margin: 0;
     font-size: 2.5vw;
+    font-weight: 300;
 }
 .cards{
     display: flex;
@@ -154,8 +155,7 @@ img.displaySlide{
     border-radius: 10px;
     /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
     /* background-color: #fafafa; */
-    /* background-color: #e5dfd8; */
-    background-color: #e4dbd2;
+    background-color: #e5dfd8;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: transform 0.3s ease;
 }
