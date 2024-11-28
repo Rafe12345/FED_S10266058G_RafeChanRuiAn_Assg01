@@ -15,11 +15,12 @@
     border-radius: 25px;
     justify-content: center;
     gap: 2%;
+    padding: 3% 0%;
     background: linear-gradient(135deg, rgba(101, 98, 98, 0.1), rgba(39, 39, 39, 0));
     backdrop-filter: blur(100px);
     border:1px solid rgba(255, 255, 255, 0.18);
     /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
-    background-color: #f4f0eb;
+    background-color: #e5dfd8;
     box-shadow: rgba(3, 9, 114, 0.4) 5px 10px, rgba(3, 9, 114, 0.3) 10px 15px, rgba(3, 9, 114, 0.2) 15px 20px, rgba(3, 9, 114, 0.1) 20px 25px, rgba(3, 9, 114, 0.05) 25px 30px;
     /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
 }   
@@ -168,14 +169,14 @@
 }
 .sectionName p{
     font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 #section3name{
     text-align: end;
 }
 .sectionName h1{
     margin: 0;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 300;
 }
 .sectionName hr{

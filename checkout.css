@@ -80,6 +80,13 @@
     border-bottom: solid;
     margin-bottom: 3%;
 }
+.productName{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.price{
+    font-weight: 600;
+}
 .orderRight img{
     height: 10rem;
 }

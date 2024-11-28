@@ -154,7 +154,8 @@ img.displaySlide{
     border-radius: 10px;
     /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
     /* background-color: #fafafa; */
-    background-color: #f4f0eb;
+    /* background-color: #e5dfd8; */
+    background-color: #e4dbd2;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: transform 0.3s ease;
 }
@@ -298,7 +299,7 @@ footer{
     width: 50%;
     border: thin solid;
     border-radius: 50px;
-    font-size: 1vw;
+    font-size: 1.3rem;
     font-family: "Koulen", sans-serif;
     background-color: #f1f1f1;
     box-shadow: rgba(3, 9, 114, 0.4) 0px 5px, rgba(3, 9, 114, 0.3) 0px 10px, rgba(3, 9, 114, 0.2) 0px 15px, rgba(3, 9, 114, 0.1) 0px 20px, rgba(3, 9, 114, 0.05) 0px 25px;

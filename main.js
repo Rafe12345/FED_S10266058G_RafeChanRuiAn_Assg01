@@ -52,7 +52,6 @@ document.body.addEventListener("wheel", ()=>{
     let y = document.body.getBoundingClientRect().top;
     console.log(y <= -1300)
     if(y < -1300 && !triggered){
-        event.preventDefault();
         popup.style.opacity = 1;
         popup.style.visibility  = "visible";
         triggered = true;
