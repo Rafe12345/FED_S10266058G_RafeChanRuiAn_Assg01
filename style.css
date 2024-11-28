@@ -117,15 +117,28 @@ nav{
     box-shadow: inset 250px 0 0 0 #f9b233;
     cursor: pointer;
 }
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
 #AboutUs {
     display: flex;
     flex-direction: row;
-    align-items: stretch;  
+    align-items: stretch;
     justify-content: center;
     gap: 5%;
     width: 100vw;
-    padding: 5% 10%;  
+    padding: 5% 10%;
     box-sizing: border-box;
+    visibility: hidden;
+}
+.AboutUsAnimate{
+    visibility: visible !important;
+    animation: slide-in 1.5s cubic-bezier(0.25, 0.8, 0.25, 1) both;
 }
 
 #AboutUsleft, #AbousUsright {

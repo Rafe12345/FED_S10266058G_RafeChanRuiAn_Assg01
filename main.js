@@ -64,4 +64,18 @@ closeButton.addEventListener("click", () => {
 revealButton.addEventListener("click", () => {
     revealButton.style.color = "white"
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutUs = document.querySelector("#AboutUs");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry.isIntersecting)
+            if (entry.isIntersecting) {
+                aboutUs.classList.add("AboutUsAnimate");
+                observer.unobserve(aboutUs);
+            }
+        });
+    },{ threshold: 0.4});
+    observer.observe(aboutUs);
+});
 
