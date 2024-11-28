@@ -37,7 +37,7 @@
     
 }
 .orderSummary{
-    height: 100px;
+    height: 1rem;
     /* width: 100%; */
     display: flex;
     align-items: center;
@@ -101,7 +101,7 @@
 }
 .table{
     margin-right: 10%;
-    width: 15%;
+    width: 20%;
 }
 .row{
     display: flex;

@@ -1,5 +1,6 @@
 let cost = 0;
 function renderCart() {
+    cost = 0;
     document.getElementById("orders").innerHTML = "";
     for (let i = 0; i < localStorage.length; i++){
         const key = localStorage.key(i);
