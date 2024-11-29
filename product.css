@@ -159,6 +159,16 @@ img.displaySlide{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: transform 0.3s ease;
 }
+.cardA{
+    all: unset;
+}
+.cardA:hover{
+    cursor: pointer;
+}
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+ }
 .card:hover{
     transform: translateY(-20px);
 }

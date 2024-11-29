@@ -13,6 +13,7 @@ let on = false;
     
 // });
 const scrollContainers = document.querySelectorAll('.cards');
+const anchors = document.querySelectorAll(".cardA")
 scrollContainers.forEach((scrollContainer) => {
     let isDragging = false;
     let startX;
@@ -33,6 +34,9 @@ scrollContainers.forEach((scrollContainer) => {
             return;
         }
         else{
+            anchors.forEach((element)=>{
+                element.classList.add("inactiveLink")
+            })
             event.preventDefault();
             const x = event.pageX - scrollContainer.offsetLeft;
             const moved = (x - startX) * 0.8;
@@ -40,11 +44,16 @@ scrollContainers.forEach((scrollContainer) => {
         }
     });
 
-    scrollContainer.addEventListener('mouseup', () => {
+    scrollContainer.addEventListener('mouseup', (event) => {
+        event.preventDefault();
         isDragging = false;
+        anchors.forEach((element)=>{
+            element.classList.remove("inactiveLink")
+        })
     });
 
-    scrollContainer.addEventListener('mouseleave', () => {
+    scrollContainer.addEventListener('mouseleave', (event) => {
+        event.preventDefault();
         isDragging = false;
     });
     scrollContainer.addEventListener('wheel', (event) => {
