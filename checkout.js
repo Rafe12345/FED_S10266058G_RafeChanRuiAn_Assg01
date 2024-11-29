@@ -1,4 +1,5 @@
 let cost = 0;
+let on = false;
 function renderCart() {
     cost = 0;
     document.getElementById("orders").innerHTML = "";
@@ -71,6 +72,18 @@ function updateDetails(){
     total.innerHTML = ``;
     subTotal.innerHTML = `$${cost}`;
     total.innerHTML= `$${cost + 10}`
+}
+function dropDownMenu() {
+    if(!on){
+        const div = document.querySelector('.hamburgerMenu');
+        div.classList.add('active');
+        on = true;
+    }
+    else{
+        const div = document.querySelector('.hamburgerMenu');
+        div.classList.remove('active');
+        on = false;
+    }
 }
 renderCart()
 updateDetails()

@@ -1,3 +1,4 @@
+let on = false;
 function addToCard(id, name, price, img, quantity){
     this.id = id
     this.name = name
@@ -14,5 +15,17 @@ function add(id, name, price, img, quantity){
     setTimeout(()=>{
         btn.innerText = 'Add to Cart';
         btn.style.background = '#55c2da'
-    },1000)
+    },500)
 }
+function dropDownMenu() {
+    if(!on){
+        const div = document.querySelector('.hamburgerMenu');
+        div.classList.add('active');
+        on = true;
+    }
+    else{
+        const div = document.querySelector('.hamburgerMenu');
+        div.classList.remove('active');
+        on = false;
+    }
+  }

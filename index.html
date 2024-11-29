@@ -12,7 +12,7 @@
     <nav>
         <div class="mainNav">
             <img id = "TECHYARD_LOGO" src="resources/TECHYARD_LOGO_FA_80x2x.png">
-            <div id="navmenu">
+            <div class="navmenu">
                 <a href="index.html">Home</a>
                 <a href="product.html">Products</a>
                 <a>Bundle deals</a>
@@ -33,12 +33,13 @@
             <a href="index.html">Home</a>
             <a href="product.html">Products</a>
             <a>Bundle deals</a>
+            <a href="checkout.html">Cart</a>
         </div>
     </nav>
-    <header>
+    <header class="landing">
         <div id="homepage">
             <h1>FUELLING NEXT-GEN<br>COMPUTING</h1>
-            <a>SHOP NOW</a>
+            <a href="product.html">SHOP NOW</a>
         </div>
     </header>
     <section id="AboutUs">
@@ -125,11 +126,13 @@
     <section id="Product_Catalouge">
         <h1>Hot Deals Await – Browse Now!</h1>
         <div class="slider">
-            <div class="slides">
-                <img class="slide" src="resources/slides/slide1.png">
-                <img class="slide" src="resources/slides/slide2.png">
-                <img class="slide" src="resources/slides/slide3.png">
-            </div>
+            <a class="catalougeA" href="product.html">
+                <div class="slides">
+                    <img class="slide" src="resources/slides/slide1.png">
+                    <img class="slide" src="resources/slides/slide2.png">
+                    <img class="slide" src="resources/slides/slide3.png">
+                </div>
+            </a>
             <button class="prev" onclick="prevSlide()">&#10094</button>
             <button class="next" onclick="nextSlide()">&#10095</button>
         </div>
@@ -167,10 +170,10 @@
             <h1>Follow us</h1>
             <div id="footericon">
                 <div class="icons">
-                    <img src="resources/icons/instagram.png"  alt="Icon" width="20" height="20">
+                    <a href="https://www.instagram.com/techyardsg/"><img src="resources/icons/instagram.png"  alt="Icon" width="20" height="20"></a>
                 </div>
                 <div  class="icons">
-                    <img src="resources/icons/tiktok.png" alt="Icon" width="20" height="20">
+                    <a href="https://www.tiktok.com/@thetechyard"><img src="resources/icons/tiktok.png" alt="Icon" width="20" height="20"></a>
                 </div>
             </div>
             <br>

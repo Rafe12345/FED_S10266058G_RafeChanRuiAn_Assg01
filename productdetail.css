@@ -219,9 +219,12 @@
         margin-bottom: 1%;
         font-size: 0.8rem;
     }
+    .shopBTN{
+        width: 60%;
+    }
     .shopBTN button{
+        padding: 7% 6%;
         font-size: 0.8rem;
-        width: 65%;
     }
     .bentoGrid{
         padding-bottom: 20%;

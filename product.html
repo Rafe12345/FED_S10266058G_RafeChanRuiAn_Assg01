@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techyard Product Page</title>
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="product.css">
 </head>
 <body>
     <nav>
         <div class="mainNav">
             <img id = "TECHYARD_LOGO" src="resources/TECHYARD_LOGO_FA_80x2x.png">
-            <div id="navmenu">
+            <div class="navmenu">
                 <a href="index.html">Home</a>
                 <a href="product.html">Products</a>
                 <a>Bundle deals</a>
@@ -32,14 +33,15 @@
             <a href="index.html">Home</a>
             <a href="product.html">Products</a>
             <a>Bundle deals</a>
+            <a href="checkout.html">Cart</a>
         </div>
     </nav>
     <header>
         <div class="slider">
             <div class="slides">
-                <img class="slide" src="resources/slides/slide1.png">
-                <img class="slide" src="resources/slides/slide2.png">
-                <img class="slide" src="resources/slides/slide3.png">
+                <img class="slide" src="resources/slides/slide4.png">
+                <img class="slide" src="resources/slides/slide5.png">
+                <img class="slide" src="resources/slides/slide6.png">
             </div>
             <button class="prev" onclick="prevSlide()">&#10094</button>
             <button class="next" onclick="nextSlide()">&#10095</button>
@@ -53,16 +55,16 @@
                     <p>Filter</p>
                 </div>
                 <div class="option">
-                    <input type="checkbox" value="Monitors">
-                    <label>Monitors</label><br>
-                </div>
-                <div class="option">
                     <input type="checkbox" value="GPU">
                     <label>GPU</label><br>
                 </div>
                 <div class="option">
                     <input type="checkbox" value="Processors">
                     <label>Prcocessors/CPU</label><br>
+                </div>
+                <div class="option">
+                    <input type="checkbox" value="Monitors">
+                    <label>Monitors</label><br>
                 </div>
             </div>
         </div>
@@ -81,7 +83,7 @@
                         </div>
                         <div class="productDetail">
                             <div class="productName">
-                                <h2>LG 32GR93U Ultra Gear | 32" 4K IPS 144HZ Gaming Monitor</h2>
+                                <h2>LG 32GR93U Ultra Gear | 32" 4K IPS 144HZ Gaming Monitor | 0.03ms</h2>
                             </div>
                             <div class="priceTag">
                                 <h3>SGD $999</h3>
@@ -99,10 +101,10 @@
                         </div>
                         <div class="productDetail">
                             <div class="productName">
-                                <h2>ASUS ROG Swift PG27AQN | QHD 360HZ 27" IPS Gaming Monitor</h2>
+                                <h2>ASUS ROG Swift PG27AQN | QHD 360HZ 27" IPS Gaming Monitor| 1.01ms</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $888</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -120,7 +122,7 @@
                                 <h2>AOC CU34G2XP | 34" WQHD 180HZ VA 1500R Curved Gaming Monitor</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $599</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -138,7 +140,7 @@
                                 <h2>ASUS ProArt PA278CV | QHD 75HZ 27" IPS Professional Grade Monitor</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $450</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -156,7 +158,7 @@
                                 <h2>Gigabyte M27Q Ice | 27" QHD 180Hz KVM IPS Gaming Full White Monitor</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $610</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -171,10 +173,10 @@
                         </div>
                         <div class="productDetail">
                             <div class="productName">
-                                <h2>LG 32GR93U Ultra Gear | 32" 4K IPS 144HZ Gaming Monitor</h2>
+                                <h2>LG 32GR93U Ultra Gear | 32" 4K IPS 144HZ Gaming Monitor | 0.03ms</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $458</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -197,10 +199,10 @@
                         </div>
                         <div class="productDetail">
                             <div class="productName">
-                                <h2>PNY GEFORCE RTX 4070TI Super | 12GB GDDR6X | 2.31 GHz</h2>
+                                <h2>PNY GEFORCE RTX 4070TI Super | 12GB GDDR6X | 2.31 GHz | 3000 CUDA</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $1200</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -218,7 +220,7 @@
                                 <h2>Gigabyte Aero GEFORCE RTX 4080 Super| 16GB GDDR6X | 2.51 Ghz</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $1400</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -236,7 +238,7 @@
                                 <h2>Gigabyte AORUS GEFORCE RTX 4080 Super| 16GB GDDR6X | 2.51 Ghz</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $1299</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -272,7 +274,7 @@
                                 <h2>Gigabyte RADEON RX 7800XT| 16GB GDDR6X| 2.6 Ghz</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $699</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -290,7 +292,7 @@
                                 <h2>Gigabyte GEFORCE RTX 4080 Super| 16GB GDDR6X | 2.51 Ghz</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $1399</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -313,10 +315,10 @@
                         </div>
                         <div class="productDetail">
                             <div class="productName">
-                                <h2>AMD Ryzen 9 7950X3D Processor | Cores/Threads: 16/32</h2>
+                                <h2>AMD Ryzen 9 7950X Processor | Cores/Threads: 16/32</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $500</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -334,7 +336,7 @@
                                 <h2>AMD Ryzen 7 7700X Processor | Cores/Threads: 8/16</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $349</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -352,7 +354,7 @@
                                 <h2>AMD Ryzen 5 7600X Processor | Cores/Threads: 6/12</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $240</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -370,7 +372,7 @@
                                 <h2>Intel Core i9-13900K Processor | Cores/Threads: 24/32</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $679</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -388,7 +390,7 @@
                                 <h2>AMD Ryzen 9 9700X Processor | Cores/Threads: 14/20</h2>
                             </div>  
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $969</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -406,7 +408,7 @@
                                 <h2>AMD Ryzen 7 3700X Processor | Cores/Threads: 16/24</h2>
                             </div>
                             <div class="priceTag">
-                                <h3>SGD $999</h3>
+                                <h3>SGD $150</h3>
                             </div>
                             <div class="view">
                                 <a >&#10095</a>
@@ -449,10 +451,10 @@
             <h1>Follow us</h1>
             <div id="footericon">
                 <div class="icons">
-                    <img src="resources/icons/instagram.png"  alt="Icon" width="20" height="20">
+                    <a href="https://www.instagram.com/techyardsg/"><img src="resources/icons/instagram.png"  alt="Icon" width="20" height="20"></a>
                 </div>
                 <div  class="icons">
-                    <img src="resources/icons/tiktok.png" alt="Icon" width="20" height="20">
+                    <a href="https://www.tiktok.com/@thetechyard"><img src="resources/icons/tiktok.png" alt="Icon" width="20" height="20"></a>
                 </div>
             </div>
             <br>

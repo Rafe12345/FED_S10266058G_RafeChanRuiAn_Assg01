@@ -2,16 +2,6 @@ const slides = document.querySelectorAll(".slides img")
 let slideIndex = 0;
 let intervalID = null;
 let on = false;
-// const scrollContainer = document.querySelectorAll('.cards');
-// scrollContainer.forEach(element => {
-//     element.addEventListener('scroll', (event) => {
-//         if (event.deltaX !== 0) {
-//             event.preventDefault();
-//             scrollContainer.scrollLeft += event.deltaX;
-//           }
-//     });
-    
-// });
 const scrollContainers = document.querySelectorAll('.cards');
 const anchors = document.querySelectorAll(".cardA")
 scrollContainers.forEach((scrollContainer) => {
