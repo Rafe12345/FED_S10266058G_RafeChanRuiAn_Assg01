@@ -65,7 +65,13 @@ function remove(id){
         updateDetails();
     }
 }
-
+//Checks the validity of the form
+document.getElementById('paymentForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (this.checkValidity()) {
+        localStorage.clear();
+    }
+});
 //This updates the price details on the page
 function updateDetails(){
     const subTotal = document.getElementById("subtotal");

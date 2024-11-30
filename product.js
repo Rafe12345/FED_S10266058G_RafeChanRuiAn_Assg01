@@ -6,7 +6,7 @@ const scrollContainers = document.querySelectorAll('.cards');
 const anchors = document.querySelectorAll(".cardA")
 
 //Check if each product scroll container has been dragged or scrolled horizontally
-//if it is, it takes the the latest scroll position minus the latest scroll inital scroll position
+//if it is, it takes the the latest scroll position minus inital scroll position
 //then it moves the scroll position using this difference.
 scrollContainers.forEach((scrollContainer) => {
     let isDragging = false;
