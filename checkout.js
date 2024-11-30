@@ -46,17 +46,6 @@ document.querySelectorAll(".orders").forEach((element) => {
     }
 })});
 
-document.querySelectorAll(".orders").forEach((element) => {
-    element.addEventListener('click', (event) => {
-    console.log(event.target.classList.contains('delete'))
-    if (event.target.classList.contains('delete')) {
-        const item = JSON.parse(localStorage.getItem(event.target.dataset.id))
-        cost -= item.price * item.quantity;
-        console.log(cost)
-        localStorage.removeItem(event.target.dataset.id)
-        renderCart()
-        updateDetails()
-    }})});
 function remove(id){
     const itemId = id; // Get the item's ID from data-id
     const item = JSON.parse(localStorage.getItem(itemId));
