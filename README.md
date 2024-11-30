@@ -1,6 +1,6 @@
 # FED_S10266058G_RafeChanRuiAn_Assg01
 ## TechYard Website
-My idea for assignment 1 is to create my version of the TechYard website which is an e-commerce platform that sells computer parts
+My idea for assignment 1 is to create my version of the [TechYard](https://thetechyard.com/) website which is an e-commerce platform that sells computer parts
 
 ### User goals:
 People who are shopping for computer parts would wish to easily navigate the platform so they can find information and products from the website.
@@ -37,9 +37,9 @@ As a user, I would like a clean and organised display of all the products, howev
 - Use to make the website more interactive through building functions like the surprise promo feature.
 
 ## Credits
-[TheTechYard](https://thetechyard.com/)
-[CSS box shadows](https://getcssscan.com/css-box-shadow-examples)
-[W3schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
-[Flaticon](https://www.flaticon.com/free-icons/)
-[Google fonts](https://fonts.google.com/)
-[ChatGpt](https://chatgpt.com/)
+- ([TheTechYard](https://thetechyard.com/))
+- ([CSS box shadows](https://getcssscan.com/css-box-shadow-examples))
+- ([W3schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp))
+- ([Flaticon](https://www.flaticon.com/free-icons/))
+- ([Google fonts](https://fonts.google.com/))
+- ([ChatGpt](https://chatgpt.com/))
