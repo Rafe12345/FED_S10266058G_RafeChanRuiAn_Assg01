@@ -37,9 +37,9 @@ As a user, I would like a clean and organised display of all the products, howev
 - Use to make the website more interactive through building functions like the surprise promo feature.
 
 ## Credits
-- ([TheTechYard](https://thetechyard.com/))
-- ([CSS box shadows](https://getcssscan.com/css-box-shadow-examples))
-- ([W3schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp))
-- ([Flaticon](https://www.flaticon.com/free-icons/))
-- ([Google fonts](https://fonts.google.com/))
-- ([ChatGpt](https://chatgpt.com/))
+- [TheTechYard](https://thetechyard.com/)
+- [CSS box shadows](https://getcssscan.com/css-box-shadow-examples)
+- [W3schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+- [Flaticon](https://www.flaticon.com/free-icons/)
+- [Google fonts](https://fonts.google.com/)
+- [ChatGpt](https://chatgpt.com/)
