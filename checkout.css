@@ -134,7 +134,7 @@
     color: white;
 }
 .payment button:hover{
-    transform: scale(110%);
+    transform: scale(1.1);
     cursor: pointer;
 }
 .box2{
