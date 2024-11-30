@@ -188,6 +188,7 @@
     margin-bottom: 10%;
 }
 .section3 iframe{
+    width: 80%;
     aspect-ratio: 16 / 9;
 }
 @media screen and (max-width: 900px) {

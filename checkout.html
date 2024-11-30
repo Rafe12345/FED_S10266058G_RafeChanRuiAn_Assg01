@@ -20,10 +20,10 @@
             </div>
             <div id="navbuttons">
                 <div class="icons">
-                    <img src="resources/icons/search_Icon.png"  alt="Icon" width="20" height="20">
+                    <img src="resources/icons/search_Icon.png"  alt="Icon" width="20" height="20" alt ="search_Icon">
                 </div>
                 <div  class="icons">
-                    <img src="resources/icons/cart_Icon.png" alt="Icon" width="20" height="20">
+                    <a href="checkout.html"><img src="resources/icons/cart_Icon.png" alt="Icon" width="20" height="20"></a>
                 </div>
                 <div  class="hamburger">
                     <button onclick="dropDownMenu()"><img src="resources/icons/burger-bar.png" alt="Icon" width="20" height="20"></button>
@@ -48,14 +48,14 @@
                     <div class="orderLeft">
                         <h1 class="productName">Gigabyte Aorus FO27Q3 | 27" 360HZ OLED Gaming Monitor</h1>
                         <div class="counter">
-                            <input type="number" class="count" value="1" min="0" />
+                            <input type="number" class="count" value="1" min="0">
                         </div>
                         <h2 class="price">SGD 969</h2>
                     </div>
                     <div class="orderRight">
                         <img src="resources/monitors/product1.png">
                     </div>
-                    <button class="delete"><p>&#10005</p></button>
+                    <button class="delete">&#10005;</button>
                 </div>
             </div>
             <section class="details">
@@ -78,7 +78,7 @@
             </section>
         </div>
     </section>
-    <form id ="paymentForm"class="paymentDetails">
+    <form id ="paymentForm" class="paymentDetails">
         <div class="paymentContainer">
             <div class="box2">
                 <div class="stage">
@@ -88,24 +88,24 @@
                 <div class="paymentInputs">
                     <div class="paymentRow">
                         <label>Full Name</label><br>
-                        <input type="text" id="fullName" placeholder="Enter your name here" required>
+                        <input type="text"  placeholder="Enter your name here" required>
                     </div>
                     <div class="paymentRow">
                         <label>Email Address</label><br>
-                        <input type="email" id="email" placeholder="Email@gmail.com" required>
+                        <input type="email"  placeholder="Email@gmail.com" required>
                     </div>
                     <div class="paymentRow">
                         <label>Card Details</label><br>
-                        <input type="text" id="cardDetails" placeholder="XXXX XXXX XXXX XXXX" required>
+                        <input type="text"  placeholder="XXXX XXXX XXXX XXXX" required>
                     </div>
                     <div class="inputRow">
                         <div class="splitrow">
                             <label>Expiration Date</label><br>
-                            <input type="text" id="expDate" placeholder="MM/YY" required>
+                            <input type="text" placeholder="MM/YY" required>
                         </div>
                         <div class="splitrow">
                             <label>CVV</label><br>
-                            <input type="text" id="cvv" placeholder="XXX" required>
+                            <input type="text" placeholder="XXX" required>
                         </div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
             </div>
         </div>
         <div class="payment">
-            <button href ="index.html" onclick="localStorage.clear()">Confirm Purchase</button>
+            <button onclick="localStorage.clear()">Confirm Purchase</button>
         </div>
     </form>
     <script src="checkout.js"></script>

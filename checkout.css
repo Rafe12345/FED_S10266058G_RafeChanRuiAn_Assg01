@@ -90,8 +90,6 @@
     border: none;
     width: 5%;
     padding: 0;
-}
-.delete p{
     font-size: 1.5rem;
 }
 .delete:hover{

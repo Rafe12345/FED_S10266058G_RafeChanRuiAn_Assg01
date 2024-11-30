@@ -20,13 +20,13 @@ function renderCart() {
         <div class="orderLeft">
             <h1 class="productName">${item.name}</h1>
             <div class="counter">
-                <input type="number" class="count" value="${item.quantity}" min="1" data-id="${item.id}" />
+                <input type="number" class="count" value="${item.quantity}" min="1" data-id="${item.id}">
             </div>
             <h2 class="price">SGD ${(item.price * item.quantity).toFixed(2)}</h2>
         </div>
         <div class="orderRight">
-            <img src="${item.img}" alt="${item.name}">
-            <button class="delete" onclick="remove(${item.id})" data-id="${item.id}"><p>&#10005</p></button>
+            <img src="${item.img}" alt="${item.name}" alt="productImg">
+            <button class="delete" onclick="remove(${item.id})" data-id="${item.id}">&#10005;</button>
         </div>
     `;
         cost += item.price * item.quantity;
