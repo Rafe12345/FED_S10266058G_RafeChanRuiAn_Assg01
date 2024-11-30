@@ -77,61 +77,64 @@
             </section>
         </div>
     </section>
-    <section class="paymentDetails">
-        <div class="box2">
-            <div class="stage">
-                <div class="number">2</div>
-                <h1>Payment details</h1>
-            </div>
-            <div class="paymentInputs">
-                <div class="paymentRow">
-                    <label>Full Name</label><br>
-                    <input type="text" id="fullName" placeholder="Enter your name here">
+    <form id ="paymentForm"class="paymentDetails">
+        <div class="paymentContainer">
+            <div class="box2">
+                <div class="stage">
+                    <div class="number">2</div>
+                    <h1>Payment details</h1>
                 </div>
-                <div class="paymentRow">
-                    <label>Email Address</label><br>
-                    <input type="text" id="email" placeholder="Email@gmail.com">
-                </div>
-                <div class="paymentRow">
-                    <label>Card Details</label><br>
-                    <input type="text" id="cardDetails" placeholder="XXXX XXXX XXXX XXXX">
-                </div>
-                <div class="inputRow">
-                    <div class="splitrow">
-                        <label>Expiration Date</label><br>
-                        <input type="text" id="expDate" placeholder="MM/YY">
+                <div class="paymentInputs">
+                    <div class="paymentRow">
+                        <label>Full Name</label><br>
+                        <input type="text" id="fullName" placeholder="Enter your name here" required>
                     </div>
-                    <div class="splitrow">
-                        <label>CVV</label><br>
-                        <input type="text" id="cvv" placeholder="XXX">
+                    <div class="paymentRow">
+                        <label>Email Address</label><br>
+                        <input type="email" id="email" placeholder="Email@gmail.com" required>
+                    </div>
+                    <div class="paymentRow">
+                        <label>Card Details</label><br>
+                        <input type="text" id="cardDetails" placeholder="XXXX XXXX XXXX XXXX" required>
+                    </div>
+                    <div class="inputRow">
+                        <div class="splitrow">
+                            <label>Expiration Date</label><br>
+                            <input type="text" id="expDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="splitrow">
+                            <label>CVV</label><br>
+                            <input type="text" id="cvv" placeholder="XXX" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="stage">
+                    <div class="number">3</div>
+                    <h1>Shipping details</h1>
+                </div>
+                <div class="paymentInputs">
+                    <div class="paymentRow">
+                        <label>Address</label><br>
+                        <input type="text" placeholder="Enter your address" required>
+                    </div>
+                    <div class="paymentRow">
+                        <label>Unit No</label><br>
+                        <input type="text" placeholder="#00 0000" required>
+                    </div>
+                    <div class="paymentRow">
+                        <label>Postal Code</label><br>
+                        <input type="text" placeholder="XXXXXX" required>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="box2">
-            <div class="stage">
-                <div class="number">3</div>
-                <h1>Shipping details</h1>
-            </div>
-            <div class="paymentInputs">
-                <div class="paymentRow">
-                    <label>Address</label><br>
-                    <input type="text" placeholder="Enter your address">
-                </div>
-                <div class="paymentRow">
-                    <label>Unit No</label><br>
-                    <input type="text" placeholder="#00 0000">
-                </div>
-                <div class="paymentRow">
-                    <label>Postal Code</label><br>
-                    <input type="text" placeholder="XXXXXX">
-                </div>
-            </div>
+        <div class="payment">
+            <button href ="index.html" onclick="localStorage.clear()">Confirm Purchase</button>
         </div>
-    </section>
-    <div class="payment">
-        <button>Confirm Purchase</button>
-    </div>
+    </form>
+
     <script src="checkout.js"></script>
 </body>
 </html>

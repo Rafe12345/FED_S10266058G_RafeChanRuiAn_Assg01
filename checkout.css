@@ -8,7 +8,7 @@
 .box{
     display: flex;
     width: 90%;
-    border-radius: 25px;
+    border-radius: 15px;
     min-height: 300px;
     background-color: #e5dfd8;
     flex-direction: column;
@@ -121,23 +121,28 @@
     display: flex;
     width: 100vw;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-top: 5%;
 }
 .payment button{
     font-size: 1rem;
     background-color: #485e62;
     border: none;
     border-radius: 15px;
-    padding: 2% 4%;
+    padding: 2% 3%;
     color: black;
-    font-size: 2rem;
+    font-size: 1em;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    color: white;
+}
+.payment button:hover{
+    transform: scale(110%);
+    cursor: pointer;
 }
 .box2{
     display: flex;
-    width: 40%;
-    border-radius: 25px;
+    width: 48%;
+    border-radius: 15px;
     height: 500px;
     background-color: #e5dfd8;
     flex-direction: column;
@@ -147,8 +152,14 @@
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 5%;
+    flex-direction: column;
+}
+.paymentContainer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
 }
 .paymentInputs{
     display: flex;
@@ -156,7 +167,7 @@
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    padding: 4%;    
+    padding: 4%;
 }
 .paymentInputs label{
     font-size: 1rem;
@@ -227,21 +238,13 @@
         margin-right: 0;
         width: 80%;
     }
-    .paymentDetails{
-        margin-top: 10%;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-    }
     .box2{
-        display: flex;
-        width: 90%;
-        border-radius: 25px;
-        height: 500px;
-        background-color: #e5dfd8;
+        width: 100%;
         flex-direction: column;
         margin-bottom: 10%;
+    }
+    .paymentContainer{
+        flex-direction: column;
+        align-items: center;
     }
 }

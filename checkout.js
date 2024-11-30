@@ -8,6 +8,8 @@ function renderCart() {
         emptyMessage.innerHTML = `<div><h1>Your cart is empty</h1></div>`;
         emptyMessage.classList.add("order");
         document.getElementById("orders").appendChild(emptyMessage);
+        const payment = document.getElementById("paymentForm")
+        payment.style.display = "none"
         return;
     }
     for (let i = 0; i < localStorage.length; i++){
