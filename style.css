@@ -17,10 +17,10 @@ body{
     border: none;
     outline: none;
     background-color: #f9b233;
-    color: white;
+    color: black;
     cursor: pointer;
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 3rem;
+    height: 3em;
     border-radius: 50%;
 }
   
