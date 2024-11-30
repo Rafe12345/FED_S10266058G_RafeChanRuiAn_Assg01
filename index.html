@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="topFunction()" id="goUp" title="Go to top">&#8593;</button>
+    <!-- Button when click sends the users back to the top (Fixed position) -->
+    <button onclick="topFunction()" id="goUp" title="Go to top">&#8593;</button> 
+    <!-- navigation bar -->
     <nav>
         <div class="mainNav">
             <img id = "TECHYARD_LOGO" src="resources/icons/TECHYARD_LOGO_FA_80x2x.png" alt="navLogo">
@@ -30,19 +32,22 @@
                 </div>
             </div>
         </div>
-        <div class="hamburgerMenu">
+        <!-- hamburger menu that only appears in mobile view -->
+        <div class="hamburgerMenu"> 
             <a href="index.html">Home</a>
             <a href="product.html">Products</a>
             <a>Bundle deals</a>
             <a href="checkout.html">Cart</a>
         </div>
     </nav>
+    <!-- Landing page of homepage with company image as background -->
     <header class="landing">
         <div id="homepage">
             <h1>FUELLING NEXT-GEN<br>COMPUTING</h1>
             <a href="product.html">SHOP NOW</a>
         </div>
     </header>
+    <!-- About us section (Details, image, partners) -->
     <section id="AboutUs">
         <div id="AboutUsleft">
             <h1>About Us</h1>
@@ -66,6 +71,7 @@
             </div>
         </div>
     </section>
+    <!-- Review cards -->
     <section id="Reviews">
         <h1>Read what our customers says!</h1>
         <div id="cards">
@@ -115,6 +121,7 @@
             </div>
         </div>
     </section>
+    <!-- Popup discount content triggered by javascript when hit the trigger point -->
     <div id="popup" class="popup">
         <div class="popup-content">
           <h2>Surprised!</h2>
@@ -124,6 +131,7 @@
           <button id="close-btn">Close</button>
         </div>
       </div>
+    <!-- An image carousel that has advertisements rotating -->
     <section id="Product_Catalouge">
         <h1>Hot Deals Await - Browse Now!</h1>
         <div class="slider">
@@ -139,6 +147,7 @@
         </div>
         <a href="product.html">SHOP NOW</a>
     </section>
+    <!-- footer section -->
     <footer>
         <div class="footerLinks">
             <div>

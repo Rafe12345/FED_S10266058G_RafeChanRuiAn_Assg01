@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Removes all the default margin and padding, horizontal overflow to be hidden, and background to be offwhite */
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     background-color: #faf7f0;
-    /* background-color: #f0f0f0; */
 }
+/* Initally hides the Go to top button and set the poition (bottom right)  */
+/* display will become a block when hit the scroll trigger point (JS) */
 #goUp{
     display: none;
     position: fixed;
@@ -23,10 +25,11 @@ body{
     height: 3em;
     border-radius: 50%;
 }
-  
+/* Make the button grow a little when hover */
 #goUp:hover {
     transform: scale(1.1);
 }
+/* Make the landing section take up full width and height with company image as background */
 .landing{
     height: 100vh;
     width: 100vw;
@@ -35,6 +38,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* Homepage section sets the company sologan to the right side of the landing page */
 #homepage h1{
     color: white;
     font-family: "Koulen", sans-serif;
@@ -60,7 +65,6 @@ body{
     cursor: pointer;
     color: black;
 }
-
 #homepage{
     text-align: right;
     display: block;
@@ -71,6 +75,8 @@ body{
     padding-bottom: 5%;
     overflow: hidden;
 }
+
+/* Navigation menu that will stick to the top of the screen */
 nav{
     display: flex;
     position: sticky;
@@ -139,14 +145,8 @@ nav{
     box-shadow: inset 250px 0 0 0 #f9b233;
     cursor: pointer;
 }
-@keyframes slide-in {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
-  }
+
+/* About us section that has slide in right animation */
 #AboutUs {
     display: flex;
     flex-direction: row;
@@ -162,7 +162,14 @@ nav{
     visibility: visible !important;
     animation: slide-in 1.5s cubic-bezier(0.25, 0.8, 0.25, 1) both;
 }
-
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+}
 #AboutUsleft, #AbousUsright {
     flex: 1;
 }
@@ -220,6 +227,7 @@ nav{
     margin: 10px; 
 }
 
+/* Image caurosel for company advertisment */
 #Product_Catalouge{
     display: flex;
     flex-direction: column;
@@ -295,6 +303,8 @@ img.displaySlide{
     cursor: pointer;
     color: black;
 }
+
+/* Review section with four cards with purple box shadows */
 #Reviews{
     margin-top: 5%;
     width: 100vw;
@@ -332,6 +342,8 @@ img.displaySlide{
     justify-content: center;
     align-items: center;
 }
+
+/* Review Card design that is split into top part (Profile picture and name) and bottom part (review) */
 .topCard{
     display: flex;
     gap: 10px;
@@ -353,6 +365,8 @@ img.displaySlide{
     gap: 2.5rem;
     justify-content: center;
 }
+
+/* Pop up content that blurs the background and only show the discount info */
 .popup {
     position: fixed;
     top: 0;
@@ -396,7 +410,9 @@ img.displaySlide{
     background-color: rgb(85, 194, 218,0.8);
     border-radius: 10px;
 }
+
 /* Product Page CSS */
+/* Same styling as the previous catalouge but shorter in width */
 .catalouge2{
     display: flex;
     justify-content: center;
@@ -414,23 +430,8 @@ img.displaySlide{
 img.displaySlide{
     display: block;
 }
-.slider button{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    padding: 1%;
-    background-color: #273a3d;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-.previous{
-    left: 0;
-}
-.next{
-    right: 0;
-}
+
+/* Products section that centers all the product card sliders */
 .products{
     width: 90%;
     display: flex;
@@ -440,9 +441,6 @@ img.displaySlide{
     margin: auto;
     margin-bottom: 15vh;
     gap: 10vh;
-}
-.Monitors{
-    justify-content: center;
 }
 .category{
     width: 100%;
@@ -492,13 +490,14 @@ img.displaySlide{
 .card:hover{
     transform: translateY(-20px);
 }
+
+/* Card design for product card splits the card into 70% for image and 30% for product details */
 .productImg img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     aspect-ratio: 1 / 1;
 }
-
 .productDetail{
     height: 30%;
     display: flex;
@@ -535,18 +534,21 @@ img.displaySlide{
     justify-content: flex-end;
     font-size: 250%;
 }
+
+/* Custom color and shape for the scroll bar for each product slider */
 .cards::-webkit-scrollbar {
     width: 80px;
     height: 5px;
-  }
+}
 .cards::-webkit-scrollbar-thumb {
     background: rgb(0, 0, 0);
     border-radius: 10px;
-  }
+}
 .cards::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.2);
-  }
+}
 
+/* filter bar centers itself over all the product sliders and space around the 3 options it has */
 .filter{
     width: 90%;
     display: flex;
@@ -584,8 +586,11 @@ img.displaySlide{
     align-items: center;
     gap: 2%;
 }
+
 /* END END END END */
 /* Product details CSS */
+
+/* Centers the product card around the full width and height of the screen */
 .section1{
     width: 100vw;
     height: 100vh;
@@ -608,7 +613,9 @@ img.displaySlide{
     border:1px solid rgba(255, 255, 255, 0.18);
     background-color: #e5dfd8;
     box-shadow: rgba(3, 9, 114, 0.4) 5px 10px, rgba(3, 9, 114, 0.3) 10px 15px, rgba(3, 9, 114, 0.2) 15px 20px, rgba(3, 9, 114, 0.1) 20px 25px, rgba(3, 9, 114, 0.05) 25px 30px;
-}   
+}
+
+/* Product card is split into 40% each side with left for product image and right for product details (name, description, price, add to cart btns) */
 .productLeft{
     width: 40%;
     /* border: solid; */
@@ -665,6 +672,8 @@ img.displaySlide{
     background-color: rgb(85, 194, 218,0.8);
     transform: scale(1.1);
 }
+
+/* Bento grid design for product details/imgs, uses grid of 4 column by the auto rows, so it is easier to position irregular shapes */
 .section2{
     width: 100vw;
     height: fit-content;
@@ -672,7 +681,6 @@ img.displaySlide{
     justify-content: center;
     margin-bottom: 10%;
 }
-
 .bentoGrid{
     display: flex;
     width: 90%;
@@ -680,7 +688,6 @@ img.displaySlide{
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .rect{
     width: 90%;
     display: grid;
@@ -702,7 +709,6 @@ img.displaySlide{
 .rect div:hover{
     transform: scale(1.1);
 }
-
 .grid1{
     grid-column: 1/3;
     background-image: url("resources/bento/OLED.png");
@@ -742,6 +748,8 @@ img.displaySlide{
     background-repeat: no-repeat;
     grid-column: 3/5;
 }
+
+/* Design of header for each product detail section */
 .sectionName{
     width: 100%;
     display: flex;
@@ -768,6 +776,8 @@ img.displaySlide{
     height: 1.4px;
     background-color: black;
 }
+/* 
+Video section for the product which sets the video to be 80% and center */
 .section3{
     width: 100vw;
     display: flex;
@@ -780,6 +790,8 @@ img.displaySlide{
 }
 /* END END END END */
 /* Checkout Page CSS */
+
+/* Order summary section which takes 90% of the width and has min height of 300px */
 .checkout{
     margin-top: 10%;
     width: 100vw;
@@ -830,6 +842,8 @@ img.displaySlide{
 .counter input::-webkit-inner-spin-button {
     opacity: 1
 }
+
+/* Cart item design which is a box that has the product details on the left and image and delete button on the right */
 .orders{
     margin-top: 2%;
     display: flex;
@@ -897,28 +911,8 @@ img.displaySlide{
     font-size: 1.1rem;
     font-weight: 300;
 }
-.payment{
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    margin-top: 5%;
-}
-.payment button{
-    font-size: 1rem;
-    background-color: #485e62;
-    border: none;
-    border-radius: 15px;
-    padding: 2% 3%;
-    color: black;
-    font-size: 1em;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    color: white;
-}
-.payment button:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
+
+/* Design for the payment details input */
 .box2{
     display: flex;
     width: 48%;
@@ -982,7 +976,32 @@ img.displaySlide{
     background-color: #f1f1f1;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.payment{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 5%;
+}
+.payment button{
+    font-size: 1rem;
+    background-color: #485e62;
+    border: none;
+    border-radius: 15px;
+    padding: 2% 3%;
+    color: black;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.payment button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 /* END END END END */
+
+/* footer section which is split into two parts
+left for a links and right for contact information */
 footer{
     display: flex;
     background-color: #273a3d;
@@ -1045,10 +1064,14 @@ footer{
     height: 100px;
     margin-top: 15px;
 }
+
+/* Mobile view */
 @media screen and (max-width: 900px) {
+    /* Decreases the size of the sologan text on the landing page */
     #homepage h1{
         font-size: 3em;
     }
+    /* Hides away the middle menu and icon and enable the hamburger menu */
     .mainNav{
         width: 50%;
     }
@@ -1098,29 +1121,25 @@ footer{
             top: 9vw;
         }
       }
-    
     .navmenu{
         display: none;
     }
 
+    /* Decreasees the overall letter size for all text in about us section */
     #AboutUsleft h1{
         font-size: 2.5em;
     }
-    
     #AboutUsleft p{
         font-size: 2.5vw;
     }
     #partners img {
         width: 35%; 
     }
-
     #partners h1{
         font-size: 1em;
     }
-    #Product_Catalouge{
-        justify-content: start;
 
-    }
+    /* Decreases the image size and button size for the slider */
     #Product_Catalouge h1{
         font-size: 2em;
 
@@ -1128,11 +1147,9 @@ footer{
     .slider{
         margin: 0;
     }
-
     .slider button{
         font-size: 1rem;
     }
-
     #Product_Catalouge a{
         width: 40%;
         height: 7%;
@@ -1146,6 +1163,8 @@ footer{
         cursor: pointer;
         color: white;
     }
+
+    /* Changes from row flex to column flex so that the cart will be aligned vertically */
     #cards{
         display: flex;
         flex-direction: column;
@@ -1168,7 +1187,7 @@ footer{
     }
 /* Mobile Product page css */
 
-
+    /* Increases the width and text size for each product card so that it is easier to see on mobile */
     .Monitors{
         width: 100%;
     }
@@ -1200,22 +1219,19 @@ footer{
     .navmenu{
         display: none;
     }
+
+    /* Increase the option sizes and the filter size to make it more accessible */
     .filterShape{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 80%;
-        border: thin solid;
-        border-radius: 50px;
         font-size: 3vw;
-        font-family: "Koulen", sans-serif;
-        background-color: #f1f1f1;
-        box-shadow: rgba(3, 9, 114, 0.4) 0px 5px, rgba(3, 9, 114, 0.3) 0px 10px, rgba(3, 9, 114, 0.2) 0px 15px, rgba(3, 9, 114, 0.1) 0px 20px, rgba(3, 9, 114, 0.05) 0px 25px;
-        margin-top: 3%;
         margin-bottom: 8%;
     }
     /* END END END END */
     /* Mobile Product Details CSS */
+    /* Changes the flex direction to column so that image and details can be bigger */
     .productTop{
         flex-direction: column;
         align-items: center;
@@ -1251,6 +1267,8 @@ footer{
         padding: 7% 6%;
         font-size: 0.8rem;
     }
+
+    /* Change the bento grid to be 2 column by auto rows so that the bento can flex downwards */
     .bentoGrid{
         padding-bottom: 20%;
     }
@@ -1280,6 +1298,8 @@ footer{
         grid-row: 4;
         grid-column: 1/3;
     }
+
+    /* Decreases the overall section name size */
     .sectionName div{
         font-size: 0.8rem;
     }
@@ -1290,6 +1310,8 @@ footer{
         font-size: 0.8rem;
     }
     /* Mobile Checkout page CSS */
+
+    /* Realigned the summary box to not colide with the nav bar */
     .checkout{
         margin-top: 15%;
     }
@@ -1302,6 +1324,7 @@ footer{
         height: 3rem;
     }
 
+    /* Decreased the overall font size to fit in the box */
     .stage h1{
         font-size: 2rem;
     }
@@ -1328,6 +1351,8 @@ footer{
         margin-right: 0;
         width: 80%;
     }
+
+    /* Changed the flex direction to column so that the payment and shipping box can take up the whole width */
     .box2{
         width: 100%;
         flex-direction: column;
@@ -1338,6 +1363,8 @@ footer{
         align-items: center;
     }
     /* END END END END */
+
+    /* Decrease the overall font size for footer elements */
     footer{
         padding: 0px 5%;
     }

@@ -1,5 +1,8 @@
 let cost = 0;
 let on = false;
+
+//Iterates through the local storage, then add each value into the html template
+//then the html template is appended into the orders container
 function renderCart() {
     cost = 0;
     document.getElementById("orders").innerHTML = "";
@@ -34,6 +37,9 @@ function renderCart() {
         document.getElementById("orders").appendChild(itemElement);
     }
 }
+
+//This checks for any increase or decrease in quantity
+//If there is there change it will update the data
 document.querySelectorAll(".orders").forEach((element) => {
     element.addEventListener('change', (event) => {
     if (event.target.classList.contains('count')) {
@@ -46,16 +52,21 @@ document.querySelectorAll(".orders").forEach((element) => {
     }
 })});
 
+//Function that is run when the cross button is pressed
+//It takes the id which allows it to find the correct local storage valye
+//Then it will remove it
 function remove(id){
-    const itemId = id; // Get the item's ID from data-id
+    const itemId = id; 
     const item = JSON.parse(localStorage.getItem(itemId));
     if (item){
-        cost -= item.price * item.quantity; // Update the cost
-        localStorage.removeItem(itemId); // Remove item from localStorage
-        renderCart(); // Re-render the cart
+        cost -= item.price * item.quantity; 
+        localStorage.removeItem(itemId);
+        renderCart(); 
         updateDetails();
     }
 }
+
+//This updates the price details on the page
 function updateDetails(){
     const subTotal = document.getElementById("subtotal");
     const total = document.getElementById("total")
@@ -64,6 +75,8 @@ function updateDetails(){
     subTotal.innerHTML = `$${cost}`;
     total.innerHTML= `$${cost + 10}`
 }
+
+//Hamburger menu (repeated)
 function dropDownMenu() {
     if(!on){
         const div = document.querySelector('.hamburgerMenu');

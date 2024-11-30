@@ -4,6 +4,10 @@ let intervalID = null;
 let on = false;
 const scrollContainers = document.querySelectorAll('.cards');
 const anchors = document.querySelectorAll(".cardA")
+
+//Check if each product scroll container has been dragged or scrolled horizontally
+//if it is, it takes the the latest scroll position minus the latest scroll inital scroll position
+//then it moves the scroll position using this difference.
 scrollContainers.forEach((scrollContainer) => {
     let isDragging = false;
     let startX;
@@ -55,6 +59,9 @@ scrollContainers.forEach((scrollContainer) => {
 });
 
 
+
+// Product advertisment slider
+// iterates through the nodelist and gives it a display class every 3s
 document.addEventListener("DOMContentLoaded",initalizeSlider);
 function initalizeSlider(){
     if(slides.length >0){
@@ -84,6 +91,8 @@ function nextSlide(){
     slideIndex++
     showSlide(slideIndex);
 }
+
+//Hamburger menu(repeated)
 function dropDownMenu() {
     if(!on){
         const div = document.querySelector('.hamburgerMenu');
@@ -97,9 +106,11 @@ function dropDownMenu() {
     }
   }
 
+//Filter function, check if the checkbox has been checked
+//then by following the checkbox value we will hide the section of products
+//if one checkbox is ticked all the others would be hidden.
 const checkboxes = document.querySelectorAll(".option input[type='checkbox']");
 let check = [];
-
 checkboxes.forEach(element => {
     element.addEventListener("change", () => {
         if(element.checked){
@@ -149,6 +160,9 @@ checkboxes.forEach(element => {
         }
     });
 });
+
+
+//Go up function(repeated)
 let mybutton = document.getElementById("goUp");
 window.onscroll = function() {scrollFunction()};
 
