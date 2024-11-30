@@ -30,7 +30,7 @@ body{
 .landing{
     height: 100vh;
     width: 100vw;
-    background-image: url(resources/homepageBG.png);
+    background-image: url(resources/homepage/homepageBG.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,7 +195,7 @@ nav{
 #Aboutuspng {
     height: 60%; 
     width: 100%;
-    background-image: url(resources/AboutUs.png);
+    background-image: url(resources/homepage/AboutUs.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
