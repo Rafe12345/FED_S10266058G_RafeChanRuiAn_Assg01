@@ -70,6 +70,7 @@ document.getElementById('paymentForm').addEventListener('submit', function (even
     event.preventDefault();
     if (this.checkValidity()) {
         localStorage.clear();
+        window.location.href = 'index.html';
     }
 });
 //This updates the price details on the page

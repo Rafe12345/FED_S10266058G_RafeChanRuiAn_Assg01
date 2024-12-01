@@ -49,7 +49,7 @@ function dropDownMenu() {
         on = false;
     }
 }
-
+//Adds the active class which shows the searchw whenever search icon is press
 function searchbar() {
     if(!search_on){
         const div = document.querySelector('.searchBar');
@@ -62,13 +62,6 @@ function searchbar() {
         search_on= false;
     }
 }
-document.querySelector('body').addEventListener('resize', ()=>{
-    if(window.innerWidth <= 900){
-        const div = document.querySelector('.searchBar');
-        div.classList.remove('active');
-        search_on= false;
-    }
-})
 // Checks if the scroll height is at -1300, and if it is it will enable the disable on the popup discount
 const popup = document.getElementById("popup");
 const closeButton = document.getElementById("close-btn");
