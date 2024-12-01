@@ -1,5 +1,5 @@
 let on = false;
-
+let search_on = false;
 //Object Constructor for each products
 function addToCard(id, name, price, img, quantity){
     this.id = id
@@ -35,6 +35,19 @@ function dropDownMenu() {
         div.classList.remove('active');
         on = false;
     }
+}
+//Adds the active class which shows the searchw whenever search icon is press
+function searchbar() {
+  if(!search_on){
+      const div = document.querySelector('.searchBar');
+      div.classList.add('active');
+      search_on = true;
+  }
+  else{
+      const div = document.querySelector('.searchBar');
+      div.classList.remove('active');
+      search_on= false;
+  }
 }
 //Go up function(repeated)
 let mybutton = document.getElementById("goUp");

@@ -4,7 +4,7 @@ let intervalID = null;
 let on = false;
 const scrollContainers = document.querySelectorAll('.cards');
 const anchors = document.querySelectorAll(".cardA")
-
+let search_on = false;
 //Check if each product scroll container has been dragged or scrolled horizontally
 //if it is, it takes the the latest scroll position minus inital scroll position
 //then it moves the scroll position using this difference.
@@ -105,7 +105,19 @@ function dropDownMenu() {
         on = false;
     }
   }
-
+//Adds the active class which shows the searchw whenever search icon is press
+function searchbar() {
+    if(!search_on){
+        const div = document.querySelector('.searchBar');
+        div.classList.add('active');
+        search_on = true;
+    }
+    else{
+        const div = document.querySelector('.searchBar');
+        div.classList.remove('active');
+        search_on= false;
+    }
+}
 //Filter function, check if the checkbox has been checked
 //then by following the checkbox value we will hide the section of products
 //if one checkbox is ticked all the others would be hidden.

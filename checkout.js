@@ -1,6 +1,6 @@
 let cost = 0;
 let on = false;
-
+let search_on = false;
 //Iterates through the local storage, then add each value into the html template
 //then the html template is appended into the orders container
 function renderCart() {
@@ -93,6 +93,19 @@ function dropDownMenu() {
         const div = document.querySelector('.hamburgerMenu');
         div.classList.remove('active');
         on = false;
+    }
+}
+//Adds the active class which shows the searchw whenever search icon is press
+function searchbar() {
+    if(!search_on){
+        const div = document.querySelector('.searchBar');
+        div.classList.add('active');
+        search_on = true;
+    }
+    else{
+        const div = document.querySelector('.searchBar');
+        div.classList.remove('active');
+        search_on= false;
     }
 }
 renderCart()

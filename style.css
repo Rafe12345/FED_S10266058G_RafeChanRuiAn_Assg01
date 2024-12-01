@@ -138,14 +138,36 @@ nav{
 .hamburger, .hamburgerMenu a, .hamburgerMenu{
     display: none;
 }
-.hamburger button{
+.hamburger button, .icons button{
     all: unset;
 }
 .navmenu a:hover{
     box-shadow: inset 250px 0 0 0 #f9b233;
     cursor: pointer;
 }
-
+.searchBar{
+    display: none;
+}
+.icons button:hover{
+    cursor: pointer;
+}
+.searchBar.active{
+    display: flex;
+    position: absolute;
+    top: 6rem;
+    border: none;
+    width: 40%;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #273a3d;
+    border-radius: 20px;
+}
+.searchBar input{
+    width: 60%;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+}
 /* About us section that has slide in right animation */
 #AboutUs {
     display: flex;
@@ -1124,7 +1146,9 @@ footer{
     .navmenu{
         display: none;
     }
-
+    .searchBar.active{
+        display: none;
+    }
     /* Decreasees the overall letter size for all text in about us section */
     #AboutUsleft h1{
         font-size: 2.5em;

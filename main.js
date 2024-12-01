@@ -2,6 +2,7 @@ const slides = document.querySelectorAll(".slides img")
 let slideIndex = 0;
 let intervalID = null;
 let on = false;
+let search_on = false;
 
 // Product advertisment slider
 // iterates through the nodelist and gives it a display class every 3s
@@ -49,7 +50,25 @@ function dropDownMenu() {
     }
 }
 
-
+function searchbar() {
+    if(!search_on){
+        const div = document.querySelector('.searchBar');
+        div.classList.add('active');
+        search_on = true;
+    }
+    else{
+        const div = document.querySelector('.searchBar');
+        div.classList.remove('active');
+        search_on= false;
+    }
+}
+document.querySelector('body').addEventListener('resize', ()=>{
+    if(window.innerWidth <= 900){
+        const div = document.querySelector('.searchBar');
+        div.classList.remove('active');
+        search_on= false;
+    }
+})
 // Checks if the scroll height is at -1300, and if it is it will enable the disable on the popup discount
 const popup = document.getElementById("popup");
 const closeButton = document.getElementById("close-btn");
