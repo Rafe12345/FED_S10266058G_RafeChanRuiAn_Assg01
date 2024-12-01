@@ -12,8 +12,11 @@ The owner wants their platform to be more interactive and accessible so that the
 As a user, I would like to find out more information about the company, however, the home page of the official Techyard website clutters your screen with advertisements. Hence, in my version, the first thing users see is information about the company, making it more credible.
 
 As a user, I would like a clean and organised display of all the products, however, the product page of the official Techyard website has too many products in each section making it hard to focus on certain products. Hence, in my version, I would order the products in a clean and organised layout.
-
-[Wireframe](https://www.figma.com/design/e0RM4uiwLESp9hd00fK2KP/FED_ASST1_S10266058G?node-id=0-1&t=RmmWGq37jwmZYFxn-1)
+## Links
+- [Wireframe](https://www.figma.com/design/e0RM4uiwLESp9hd00fK2KP/FED_ASST1_S10266058G?node-id=0-1&t=RmmWGq37jwmZYFxn-1)
+- [Github Repo](https://github.com/Rafe12345/FED_S10266058G_RafeChanRuiAn_Assg01)
+- [Live website](https://rafe12345.github.io/FED_S10266058G_RafeChanRuiAn_Assg01/)
+  
 ## Features
 - Filter feature, which allows the users to select checkboxes and only see the products they have selected.
 
